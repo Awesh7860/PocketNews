@@ -124,7 +124,3 @@ function displayNews(){
       middlesection.appendChild(card)
    })
 }
-function clearAll(){
-const card=document.getElementById("card")
-card.innerHTML=""
-}
