@@ -14,8 +14,8 @@ function hambar(){
    <li id="allnews" onclick="fetchGeneralNews()">All News</li>
    <li id="business" onclick="fetchBusinessNews()">Business</li>
    <li id="sports" onclick="fetchSportsNews()">Sports</li>
-   <li id="technology" onclick="technology()">Technology</li>
-   <li id="entertainment" onclick="entertainment()">Entertainment</li>
+   <li id="technology" onclick="fetchEntertainmentNews()">Technology</li>
+   <li id="entertainment" onclick="fetchTechnologyNews()">Entertainment</li>
 </ul>`
    maincontainer.appendChild(sidebar)
    const X=`
