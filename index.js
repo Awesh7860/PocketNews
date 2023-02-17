@@ -54,7 +54,7 @@ const fetchGeneralNews=async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    console.log(newsData);
+    clearAll()
     displayNews()
 }
 const fetchBusinessNews =async ()=>{
@@ -62,7 +62,7 @@ const fetchBusinessNews =async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    console.log(newsData);
+    clearAll()
     displayNews()
 }
 const fetchSportsNews=async ()=>{
@@ -70,7 +70,7 @@ const fetchSportsNews=async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    console.log(newsData);
+    clearAll()
     displayNews()
 }
 const  fetchEntertainmentNews=async ()=>{
@@ -78,7 +78,7 @@ const  fetchEntertainmentNews=async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    console.log(newsData);
+    clearAll()
     displayNews()
 }
 const  fetchTechnologyNews=async ()=>{
@@ -86,7 +86,7 @@ const  fetchTechnologyNews=async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    console.log(newsData);
+    clearAll()
     displayNews()
 }
 window.onload=function(){
@@ -125,6 +125,6 @@ function displayNews(){
    })
 }
 function clearAll(){
-    const card=document.getElementById("card")
-    card.remove()
+const card=document.getElementById("card")
+card.innerHTML=""
 }
