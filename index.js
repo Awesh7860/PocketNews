@@ -93,7 +93,7 @@ window.onload=function(){
     fetchHeadlines()
 }
 function displayNews(){
-   newsData.forEach(news=>{
+   newsData.map(news=>{
     const card=document.createElement("div")
     card.className="card"
     console.log(news);
