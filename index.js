@@ -54,7 +54,6 @@ const fetchGeneralNews=async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    clearAll()
     displayNews()
 }
 const fetchBusinessNews =async ()=>{
@@ -62,7 +61,6 @@ const fetchBusinessNews =async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    clearAll()
     displayNews()
 }
 const fetchSportsNews=async ()=>{
@@ -70,7 +68,6 @@ const fetchSportsNews=async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    clearAll()
     displayNews()
 }
 const  fetchEntertainmentNews=async ()=>{
@@ -78,7 +75,6 @@ const  fetchEntertainmentNews=async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    clearAll()
     displayNews()
 }
 const  fetchTechnologyNews=async ()=>{
@@ -86,14 +82,14 @@ const  fetchTechnologyNews=async ()=>{
     newsData=[]
     const myJson=await response.json()
     newsData=myJson.articles
-    clearAll()
     displayNews()
 }
 window.onload=function(){
     fetchHeadlines()
 }
 function displayNews(){
-   newsData.map(news=>{
+    middlesection.innerHTML=""
+   newsData.forEach(news=>{
     const card=document.createElement("div")
     card.className="card"
     console.log(news);
